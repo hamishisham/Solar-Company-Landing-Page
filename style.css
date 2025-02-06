@@ -1,0 +1,1028 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0B9586;
+  padding: 16px 150px;
+  height: 86px;
+  color: white;
+}
+
+.logo img {
+  width: 157px;
+  height: 54px;
+  opacity: 0.2;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  height: 38px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.navbar ul li {
+  padding: 8px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 1;
+  line-height: 22px;
+}
+
+.home-link {
+  padding: 8px 28px;
+  font-weight: 600;
+  border-radius: 5px 0px 0px 0px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.navbar ul li a:hover {
+  color: #FFC107;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: center;
+  color: white;
+}
+
+.call-us {
+  font-size: 18px;
+}
+
+.phone-number {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  background: linear-gradient(267.36deg, rgba(0, 0, 0, 0.7) 2.2%, rgba(0, 0, 0, 0.182) 58.17%),
+  url('images/solar-panels-meadow 1.png') no-repeat center center/cover;
+  height: 650px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  padding: 20px;
+}
+
+.hero-content {
+  max-width: 800px;
+  position: absolute;
+  left: 150px;
+  text-align: left;
+  color: white;
+  padding: 40px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 332.83px;
+  font-size: 14px;
+  color: white;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.pagination span {
+  padding: 0 10px;
+  border-right: 1px solid white;
+}
+
+.pagination span:last-child {
+  border-right: none;
+}
+
+/* Headline */
+.hero-content h1 {
+  font-size: 52px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+/* Paragraph */
+.hero-content p {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0 20px;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 109px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #3CAB90;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: darkgreen;
+}
+
+.btn-secondary {
+  background-color: #FFBB1C;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: darkorange;
+}
+
+/* General Container */
+.section-container-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 50px auto;
+  padding: 80px 0;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.left-content {
+  width: 50%;
+}
+
+.left-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #101828;
+  margin-bottom: 20px;
+}
+
+.left-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.list-arrange {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.list-item span {
+  font-weight: 700;
+  font-size: 18px;
+  color: #84BD3A;
+}
+
+.list-item h4 {
+  font-size: 18px;
+  color: #101828;
+}
+
+.right-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative; /* Make the container relative for absolute positioning of the yellow box */
+}
+
+.yellow-box {
+  position: absolute;
+  top: 325px;
+  left: 0;
+  width: 266px;
+  height: 208px;
+  border-radius: 12px;
+  opacity: 0.9;
+  z-index: 1; /* Ensures the yellow box is above the image at the bottom left */
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.image-container img {
+  max-width: 100%;
+  top: 80px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 0; /* Ensure the bottom image is below the yellow box */
+}
+
+.section-container-2 {
+  background: url('images/8116 1.png')  no-repeat center center/cover; /* Background image */
+  padding: 50px 20px; /* Add some padding for spacing */
+  gap:10px;
+  height: 505px; 
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start; /* Align content to the left horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+.content-container {
+  text-align: left; /* Align text to the left */
+  left: 150px; /* Add space from the left side */
+  max-width: 678px; /* Set the width to fit the content */
+  position: absolute;
+  padding: 40px;
+  height: auto; /* Adjust the height automatically to fit the content */
+  gap: 32px; /* Gap between child elements */
+}
+
+h1 {
+  font-size: 42px; /* Customize as needed */
+  font-weight: 600; /* Customize as needed */
+  width: 700px;
+  margin-bottom: 20px;
+  color: white; /* Customize as needed */
+  letter-spacing: -0.02em;
+  line-height: 50.83px;
+}
+
+p {
+  font-size: 20px; /* Customize as needed */
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 20px;
+  color: white; /* Customize as needed */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #FFBB1C; /* Button color */
+  border: none;
+  border-radius: 109px;
+  padding: 12px 34px;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff9900; /* Button hover effect */
+}
+
+/* Section Container */
+.section-container-3 {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Content Container */
+.content-container-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures everything inside is centered */
+  text-align: center;
+}
+
+.content-container-3 h1 {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: -0.02em;
+  color: #333;
+  text-align: center;
+  width: 100%; /* Makes sure it's centered */
+}
+
+/* Paragraph Styling */
+.content-container-3 p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #475467;
+  max-width: 800px;
+  margin: 10px auto 40px;
+}
+
+/* Logo Cards Container */
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+/* Individual Logo Card */
+.logo-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 358px;
+  width: 100%; /* Ensures responsiveness */
+}
+
+/* Ensure Images Fit the Card */
+.logo-card img {
+  width: 100%; /* Makes sure the image fits the card */
+  height: 240px;
+  object-fit: cover; /* Ensures proper cropping */
+  border-radius: 8px;
+}
+
+/* Card Title */
+.logo-card h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+  margin-top: 15px;
+}
+
+/* Card Description */
+.logo-card p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* View Products Link with Arrow */
+.view-products {
+  margin-top: 20px;
+}
+
+.view-products a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0073e6;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.view-products a::after {
+  content: "→";
+  font-size: 18px;
+  margin-left: 8px;
+  transition: margin-left 0.3s ease;
+}
+
+/* Hover Effect for Arrow Movement */
+.view-products a:hover::after {
+  margin-left: 12px;
+}
+
+/* Section Container */
+.section-container-4 {
+  position: relative;
+  padding: 80px 20px;
+  background: url('images/8116 1 (1).png') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 500px; /* Adjust height as needed */
+}
+
+/* Content Container */
+.content-container-4 {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 100%;
+  color: #fff;
+  box-shadow: 0 4px 10px #00000091;
+  ;
+
+}
+
+/* Title */
+.content-container-4 h1 {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: -0.02em;
+  margin-bottom: 15px;
+}
+
+/* Paragraph */
+.content-container-4 p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: white;
+}
+
+
+/* Section Container */
+.section-container-5 {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+}
+
+/* Content Container */
+.content-container-5 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+}
+
+/* Left Side */
+.left-side {
+  flex: 1;
+  max-width: 30%;
+  text-align: left;
+}
+
+.left-side .icon-container img {
+  width: 56px; /* Adjust icon size */
+}
+
+.left-side h1 {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 51px;
+  color: #101828;
+  margin-top: 10px;
+  width: 100%; /* Match the width of the card */
+}
+
+.left-side p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Right Side - Grid Layout */
+.right-side {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 Columns */
+  gap: 32px;
+}
+
+/* Individual Card */
+.card-repeat {
+  background: rgba(60, 171, 144, 0.05); /* 5% opacity */
+  padding: 20px;
+  border-radius: 12px;
+  max-height: 418px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-repeat:hover {
+  transform: translateY(-5px);
+}
+
+/* Image Container */
+.image-container-card {
+  width: 310.67px; /* Fixed width */
+  height: 106px; /* Fixed height */
+  padding: 10px 0px 0px 0px; /* Top padding of 10px, others 0px */
+  gap: 10px; /* Gap between child elements */
+  border-radius: 10px; /* Rounded top-left corner */
+  background: rgba(60, 171, 144, 0.15); /* Uniform background color */
+  mix-blend-mode: normal; /* Ensure consistent blending */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image Styling */
+.image-container-card img {
+  width: 225px;
+  height: 49px;
+  background: rgba(60, 171, 144, 0.15); /* Match container's background */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px; /* Space between image and title */
+  mix-blend-mode: multiply; /* Apply blending effect */
+}
+
+/* Content Container */
+.content-container-card {
+  text-align: left;
+  width: 100%;
+}
+
+.card-repeat h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  margin-top: 15px;
+}
+
+.card-repeat p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* View Integration Link */
+.view-products {
+  margin-top: 15px;
+}
+
+.view-products a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3CAB90;
+  text-decoration: none;
+  display: inline-flex;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.view-products a::after {
+  content: "→";
+  font-size: 16px;
+  margin-left: 8px;
+  transition: margin-left 0.3s ease;
+}
+
+.view-products a:hover::after {
+  margin-left: 12px;
+}
+
+/* Section: Our Values */
+.our-values {
+  background-color: white;
+  text-align: center;
+  width: 1,440px;
+height: 719px;
+padding: 80px 150px 80px 150px;
+gap: 32px;
+
+}
+
+.our-values h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.our-values p {
+  font-size: 1.2rem;
+  color: #6b7280;
+  margin-bottom: 2.5rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.value-card {
+  background: #3CAB900D;
+  border: 1px solid #3CAB90;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-card .icon {
+  font-size: 2rem;
+  color: #34d399;
+  margin-bottom: 1rem;
+}
+
+.value-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color:white;
+  width:1,440px;
+height:603px;
+padding: 80px 150px 80px 150px;
+gap: 32px;
+
+}
+
+.testimonials-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.testimonials-text {
+  flex: 1;
+  width: 400px;
+height: 296px;
+gap: 28px;
+
+
+}
+
+.testimonials-text img{
+  width: 58.33px;
+  height: 48px;
+}
+
+.testimonials-text h2 {
+  width: 400px;
+height: 128px;
+
+  font-size: 48px;
+  font-weight: 700;
+  color:#1C1C1C;
+  line-height: 64px;
+
+}
+
+.testimonials-text p {
+  margin-top: 0.5rem;
+  color: #6b7280;
+  font-size: 18px;
+  font-weight: 400;
+  width: 400px;
+height: 64px;
+
+}
+
+.testimonials-card {
+  flex: 1;
+  background-color: #3cab900f;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h4 {
+  color: #3cab90;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.16px;
+  text-align: left;
+}
+
+.points-indicator {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.points-indicator span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+}
+
+.points-indicator .active-point {
+  background-color: #3cab90;
+}
+
+.testimonials-card p {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  color: #101828;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.user-details h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.user-details p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.navigation-buttons button {
+  border: 1px solid #1C1C1C;
+  background: #3CAB900F;
+  width: 48px;
+  height: 48px;
+  gap: 0px;
+  opacity: 0px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navigation-buttons button:hover {
+  background-color: #d1d5db;
+}
+
+/* Footer */
+.footer {
+  background: #283646;
+  color: #ffffff;
+  padding: 3rem 1rem;
+  width: 1,440px;
+height: 412px;
+padding: 80px 150px 80px 150px;
+gap: 54px;
+
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Left Section */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-logo {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.footer-links ul {
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: row; /* Ensure items are in a row */
+  gap: 1.5rem; /* Add spacing between items */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-size: 400;
+  line-height: 24px;
+}
+
+/* Right Section */
+.footer-right {
+  text-align: right;
+  
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.newsletter p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.newsletter form {
+  display: flex;
+}
+
+.newsletter input {
+  width: Hug (406px)px;
+  width: 406px;
+height:48px;
+padding: 0px 0px 0px 20px;
+border-radius: 38px 38px 38px 38px;
+border: 1px solid #B3BDC7;
+background-color:#FFFFFF17;
+
+
+  
+}
+
+.newsletter button {
+  background-color: #FFBB1C;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  width: 147px;
+height: 48px;
+padding: 12px 34px 12px 34px;
+gap: 10px;
+border-radius: 109px;
+
+}
+
+/* Divider Line */
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #4b5563;
+  margin: 2rem 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-bottom-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.copyright {
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left, .footer-right {
+    align-items: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+  
+/* Responsive Design */
+@media (max-width: 900px) {
+  .content-container-5 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .right-side {
+    grid-template-columns: 1fr; /* 1 column layout for smaller screens */
+  }
+
+  .card-repeat {
+    width: 100%; /* Make cards full width in smaller screens */
+  }
+}
+
+
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-info {
+    margin-top: 10px;
+  }
+
+  .hero-content {
+    left: 20px;
+    padding: 20px;
+  }
+
+  .section-container-1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-content,
+  .right-content {
+    width: 100%;
+  }
+}
